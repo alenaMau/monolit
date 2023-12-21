@@ -1,0 +1,16 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='slim' %}
+</head>
+<body class="container">
+    <a href="{% url 'polls:reg' %}"><p class="alert alert-primary">Регистрация</p></a>
+    <a href="{% url 'polls:login' %}"><p class="alert alert-primary">Вход</p></a>
+</body>
+</html>
